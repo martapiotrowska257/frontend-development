@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Pokemon!</h1>
+    </header>
+    <main>
+        <section class="search-section">
+            <div class="search-button">
+                <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+                <button onclick="fetchData()">Fetch Pokemon</button><br>
+            </div>
+        </section>
+
+        <section class="pokemon-display">
+            <div class="pokemon-list" id="pokemonList"></div>
+            <div class="image">
+                <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
