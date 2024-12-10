@@ -7,25 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Find Your Pokemon!</h1>
-    </header>
-    <main>
-        <section class="search-section">
-            <div class="search-button">
-                <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
-                <button onclick="fetchData()">Fetch Pokemon</button><br>
-            </div>
-        </section>
+    <!--Target container-->
+    <main id="root"></main>
 
-        <section class="pokemon-display">
-            <div class="pokemon-list" id="pokemonList"></div>
-            <div class="image">
-                <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
-            </div>
-        </section>
-    </main>
+    <!-- React, ReactDOM i Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script src="app.js"></script>
+    <!-- Skrypt aplikacji -->
+    <script type="text/babel" src="app.js"></script>
+
 </body>
 </html>
